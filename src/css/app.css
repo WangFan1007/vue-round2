@@ -1,0 +1,10 @@
+.mytoast{
+    background-color: aqua;
+}
+.mytoast i{
+    color: hotpink;
+}
+
+.mytoast span{
+    color: blueviolet;
+}
