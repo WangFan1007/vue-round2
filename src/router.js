@@ -7,7 +7,8 @@ import ShopCarContainer from './components/tabbar/ShopCarContainer.vue'
 
 var router = new VueRouter({
     routes:[
-        {path:'/home', component:HomeContainer},
+        {path:'/',redirect:{name:'home'}},
+        {path:'/home',name:'home', component:HomeContainer},
         {path:'/member', component:MemberContainer},
         {path:'/shopcar', component:ShopCarContainer},
         {path:'/search', component:SearchContainer},

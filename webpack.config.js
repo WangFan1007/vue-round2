@@ -16,11 +16,13 @@ module.exports = {
     ],
     module:{
         rules:[
-            { test:/.css$/,use:['style-loader','css-loader'] },
-            { test:/.vue$/,use:'vue-loader' },
-            { test:/.js$/,use:'babel-loader', exclude:/node_modules/ },
+            { test:/\.css$/,use:['style-loader','css-loader'] },
+            { test:/\.scss$/,use:['style-loader','css-loader',"sass-loader"]},
+            { test:/\.vue$/,use:'vue-loader' },
+            { test:/\.js$/,use:'babel-loader', exclude:/node_modules/ },
             { test:/\.(png|jpg|gif|jpeg)$/,loader:'url-loader?limit=2048'},
             { test:/\.(woff|svg|eot|ttf|woff|woff2)$/,loader:'url-loader'},
+            
         ]
     }
     
